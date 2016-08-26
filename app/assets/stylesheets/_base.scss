@@ -1,0 +1,35 @@
+/* Variables */
+$font-stack: Gothic, sans-serif;
+$grid-gutter-width: 2em;
+
+/* Mixins */
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  & {
+    *zoom: 1;
+  }
+}
+
+@mixin make-row($width: 0){
+  @include clearfix;
+  @if $width != 0 {
+    width: $width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@mixin make-column($part, $whole, $gutter-width: $grid-gutter-width) {
+  width: percentage($part/$whole);
+  float: left;
+  padding-right: $gutter-width;
+}
