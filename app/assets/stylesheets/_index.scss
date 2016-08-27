@@ -1,5 +1,5 @@
 .landing {
-  background: url(<%= image_path 'main.jpg' %>);
+  background: url(<%= asset_path 'main.jpg' %>);
   background-repeat: no-repeat;
   background-size: cover; background-attachment: fixed;
   background-position: center 60%;
