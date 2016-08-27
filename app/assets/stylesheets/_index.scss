@@ -13,7 +13,6 @@
 }
 
 .main-index {
-  @include make-row(75em);
   padding: 2em 2em;
   box-shadow: 1px 0 2px -1px;
 
@@ -22,11 +21,11 @@
   }
 
   @media screen and (min-width: 75em) {
-    @include make-row(62.5em);
+    max-width: 75em;
   }
 
   @media screen and (min-width: 90em) {
-    @include make-row(75em);
+    max-width: 90em;
   }
 }
 
