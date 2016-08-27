@@ -12,59 +12,69 @@
 }
 
 .footer-nav {
+  @include clearfix;
   list-style: none;
+  display: block;
+  margin-bottom: 2em;
 
   & > li {
-    display: block;
-    margin: 1em 0;
-
-    &:first-child {
-      margin: 0;
-    }
-
-    &:last-child {
-      margin: 0;
-    }
+    float: left;
+    width: 25%;
   }
 
   .nav-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
     color: darken(white, 10%);
-    font-size: 0.75em;
     transition: color 0.35s ease-in-out;
 
     &:hover {
       color: darken(white, 40%);
     }
   }
-}
 
-.footer-nav-left {
-  float: left;
+  @media screen and (min-width: 60em) {
+    float: left;
+
+    & > li {
+      display: block;
+      margin: 1em 0;
+      float: none;
+
+      &:first-child {
+        margin: 0;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
 }
 
 .contact {
-  float: left;
-  margin-left: 25%;
-  text-align: center;
-  font-size: 0.75em;
-  letter-spacing: 2px;
-  line-height: 1.5;
   color: darken(white, 10%);
 
   .address {
     color: darken(white, 35%);
     text-transform: uppercase;
   }
+
+  @media screen and (min-width: 60em) {
+    float: left;
+    margin-left: 25%;
+  }
 }
 
 .social {
-  float: right;
-  text-align: right;
 
   a {
     color: white;
+  }
+
+  & > li {
+    width: 33%;
+  }
+
+  @media screen and (min-width: 60em) {
+    float: right;
   }
 }
