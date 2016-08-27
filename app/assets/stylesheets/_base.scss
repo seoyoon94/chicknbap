@@ -21,8 +21,9 @@ $grid-gutter-width: 2em;
 
 @mixin make-row($width: 0){
   @include clearfix;
+  position: relative;
   @if $width != 0 {
-    width: $width;
+    max-width: $width;
     margin-left: auto;
     margin-right: auto;
   }

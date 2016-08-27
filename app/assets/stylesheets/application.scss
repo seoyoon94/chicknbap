@@ -11,10 +11,11 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require _normalize
- *= require _typography
- *= require _header
- *= require _footer
+ *= require normalize
+ *= require typography
+ *= require header
+ *= require index
+ *= require footer
  *= require_self
  */
 @import 'normalize';
@@ -22,4 +23,3 @@
 @import 'header';
 @import 'index';
 @import 'footer';
-
