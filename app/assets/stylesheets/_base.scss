@@ -1,6 +1,9 @@
 /* Variables */
 $font-stack: Gothic, sans-serif;
 $grid-gutter-width: 2em;
+$small-breakpoint: 60em;
+$medium-breakpoint: 75em;
+$large-breakpoint: 90em;
 
 /* Mixins */
 @mixin clearfix {
