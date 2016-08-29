@@ -1,13 +1,13 @@
 <header class="navbar navbar-transparent">
   <nav class="l-nav-container">
     <div class="nav-logo">
-      <a class="logo" href='/'></a>
+      <%= link_to image_tag('newlogo.jpg', alt: 'logo', class: 'logo'), remote: true %>
     </div>
     <ul class="nav nav-right">
-      <li><%= link_to "Menu", menu_path, class: 'nav-link' %></li>
-      <li><%= link_to "Hours", hours_path, class: 'nav-link' %></li>
-      <li><%= link_to "About", about_path, class: 'nav-link' %></li>
-      <li><%= link_to "Contact", contact_path, class: 'nav-link' %></li>
+      <li><%= link_to "Menu", menu_path, remote: true, class: 'nav-link' %></li>
+      <li><%= link_to "Hours", hours_path, remote: true, class: 'nav-link' %></li>
+      <li><%= link_to "About", about_path, remote: true, class: 'nav-link' %></li>
+      <li><%= link_to "Contact", contact_path, remote: true, class: 'nav-link' %></li>
     </ul>
   </nav>
 </header>
