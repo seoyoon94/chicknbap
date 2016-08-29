@@ -3,7 +3,6 @@ $.app = (function(app, $, undefined) {
     let navbar = $('.navbar');
     let headerHeight = navbar.height();
     $(window).on('scroll', function() {
-      console.log(headerHeight);
       if($(window).scrollTop() > headerHeight) {
         navbar.addClass('navbar-is-fixed');
       }
