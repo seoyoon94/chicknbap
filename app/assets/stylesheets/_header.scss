@@ -5,20 +5,22 @@
   left: 0;
   right: 0;
   padding: 1.5em 1.5em; 
-  background: white;
-  z-index: 1000
-}
-
-//Appears once user scrolls down.
-.navbar-is-fixed {
-  position: fixed;
-  padding-top: 0;
-  border-bottom: 1px solid gray;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
 }
 
 //Appears on landing page
 .navbar-transparent {
   background: rgba(255, 255, 255, 0.25);
+}
+
+//Appears once user scrolls down.
+.navbar-is-fixed {
+  position: fixed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 1px 2px -1px gray;
+  background: white;
 }
 
 .nav-logo {
@@ -38,11 +40,15 @@
 
 .l-nav-container {
   @include clearfix;
+  position: relative;
 }
 
 .nav {
+  @include center-vertical;
   display: block;
   list-style: none;
+  margin: 0;
+  right: 0;
 
   & > li {
     display: block;
@@ -51,32 +57,32 @@
     margin: 0 1.25em;
     letter-spacing: 1px;
 
-    .nav-link:after {
-      content: "";
-      display: block;
-      width: 99%;
-      height: 2px;
-      margin-top: 2px;
-      background: black;
-      transform: scaleX(0);
-      transform-origin: left center;
-      transition: transform 0.35s ease-in-out;
-    }
-
     &:hover .nav-link:after{
       transform: scaleX(1);
     }
-  }
-
-  .nav-link {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: lighten(black, 10%);
   }
 }
 
 .nav-right {
   float: right;
   margin-right: 4em;
+}
+
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: lighten(black, 10%);
+
+  &:after {
+    content: "";
+    display: block;
+    width: 99%;
+    height: 2px;
+    margin-top: 2px;
+    background: black;
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.35s ease-in-out;
+  }
 }

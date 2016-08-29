@@ -37,3 +37,9 @@ $large-breakpoint: 90em;
   float: left;
   padding-right: $gutter-width;
 }
+
+@mixin center-vertical {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

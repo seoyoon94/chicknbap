@@ -1,19 +1,23 @@
 .landing {
-  background: url(image_path('main.jpg'));
+  background-image: url(image_path('main.jpg'));
   background-repeat: no-repeat;
   background-size: cover; 
   background-attachment: fixed;
   background-position: center 60%;
   height: 41.25em;
   box-shadow: 0 1px 2px -1px;
-}
+
+  &.about {
+    background-image: url(image_path('about.jpg'));
+  }
+} 
 
 .container {
   @include make-row;
   margin: 4em 0;
 }
 
-.main-index {
+.main {
   padding: 2em 2em;
   box-shadow: 1px 0 2px -1px;
   width: 100%;
@@ -32,7 +36,6 @@
 }
 
 .article {
-
   @media screen and (min-width: $small-breakpoint) and (max-width: $medium-breakpoint) {
     @include make-column(1, 2, 3em);
     &:last-child {
@@ -49,3 +52,58 @@
   }
 }
 
+/******************************************************
+        About Page Styles
+*******************************************************/
+
+.bio {
+  @include make-row;
+  padding: 2em 1em;
+  border-bottom: 1px solid lightgrey;
+
+  .photo {
+    @include make-column(2,4);
+    @include center-vertical;
+    height: 200px;
+    width: 200px;
+    box-shadow: 1px 1px 3px inset gray;
+  }
+
+  &:nth-child(2n) > .photo {
+    right: 1em;
+    float: right;
+  }
+
+  &:nth-child(2n + 1) > .photo {
+    float: left;
+  }
+
+  &:last-child {
+    border: 0;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $small-breakpoint) {
+    & > .photo {
+      float: none;
+    }
+  }
+}
+
+.bio-article {
+  @include make-column(2, 4);
+
+  .bio:nth-child(2n) > & {
+    float: left;
+  }
+
+  .bio:nth-child(2n + 1) > & {
+    float: right;
+  }
+
+  @media screen and (min-width: $small-breakpoint) {
+    .bio > & {
+      float: none;
+    }
+  }
+}
