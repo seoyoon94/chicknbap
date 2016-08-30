@@ -48,3 +48,19 @@ body {
 h3, p {
   line-height: 1.5;
 }
+
+.caption-description {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  h2 {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
+}
