@@ -1,0 +1,1117 @@
+/* Variables */
+/* Mixins */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require normalize
+ *= require typography
+ *= require header
+ *= require index
+ *= require footer
+ *= require_self
+ */
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+/* line 8, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 18, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/* line 31, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 50, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 61, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 70, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+/* line 79, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 92, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 102, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/* line 115, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 125, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 134, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 143, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 152, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+/* line 161, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 170, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 179, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 187, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 191, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 202, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 210, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 222, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+/* line 234, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 243, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 257, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+/* line 269, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 278, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 288, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 299, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 310, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+/* line 322, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+/* line 333, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 346, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 359, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 368, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 378, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 388, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+/* line 397, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+/* line 406, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 416, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* line 421, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_normalize.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 1, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+body {
+  font-family: Gothic, sans-serif;
+  font-size: 16px;
+}
+
+/* line 7, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.article h2 {
+  letter-spacing: 3px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 14, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.article p {
+  font-size: 1em;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  text-indent: 1em;
+}
+
+/* line 22, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.contact {
+  text-align: center;
+  font-size: 0.75em;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+/* line 29, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.social {
+  text-align: right;
+}
+
+/* line 33, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.footer-nav, .social-nav {
+  text-align: center;
+}
+/* line 36, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.footer-nav .nav-link, .social-nav .nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+@media screen and (min-width: 60em) {
+  /* line 33, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+  .footer-nav, .social-nav {
+    text-align: left;
+  }
+}
+
+/* line 48, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+h3, p {
+  line-height: 1.5;
+}
+
+/* line 52, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.caption-description {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+/* line 57, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.caption-description h2 {
+  margin: 0;
+  line-height: 1.5;
+}
+/* line 62, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_typography.scss */
+.caption-description p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* line 2, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5em 1.5em;
+  z-index: 1000;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+/* line 13, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.navbar-transparent {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* line 18, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.navbar-is-fixed {
+  position: fixed;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0 1px 2px -1px gray;
+  background: white;
+}
+
+/* line 26, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav-logo {
+  float: left;
+  height: 3em;
+  width: 20em;
+}
+/* line 31, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav-logo .logo {
+  display: block;
+  height: 100%;
+  max-width: 100%;
+}
+
+/* line 38, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.l-nav-container {
+  position: relative;
+}
+/* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.l-nav-container:before, .l-nav-container:after {
+  content: " ";
+  display: table;
+}
+/* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.l-nav-container:after {
+  clear: both;
+}
+/* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.l-nav-container {
+  *zoom: 1;
+}
+
+/* line 43, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  list-style: none;
+  margin: 0;
+  right: 0;
+}
+/* line 50, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav > li {
+  display: block;
+  float: left;
+  padding: 0.25em 0.5em;
+  margin: 0 1.25em;
+  letter-spacing: 1px;
+}
+/* line 57, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav > li:hover .nav-link:after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* line 63, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav-right {
+  float: right;
+  margin-right: 4em;
+}
+
+/* line 68, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+/* line 74, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_header.scss */
+.nav-link:after {
+  content: "";
+  display: block;
+  width: 99%;
+  height: 2px;
+  margin-top: 2px;
+  background: black;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left center;
+          transform-origin: left center;
+  -webkit-transition: -webkit-transform 0.35s ease-in-out;
+  transition: -webkit-transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out;
+  transition: transform 0.35s ease-in-out, -webkit-transform 0.35s ease-in-out;
+}
+
+/**********************************************
+           Hero Image Backgrounds
+***********************************************/
+/* line 4, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.hero {
+  background-image: url("/assets/main-9eb652ed5415be1c2a381c353be5023a9d7478ba91966df087e5e702b45dea8f.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center 60%;
+  height: 20em;
+  box-shadow: 0 1px 2px -1px;
+}
+@media screen and (min-width: 60em) {
+  /* line 4, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .hero {
+    height: 41.25em;
+  }
+}
+
+/* line 19, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.hero-about {
+  background-image: url("/assets/about-1e958ff73b99a51cf0d4eec48bbdea5021fc84676a4c91909f8e387119eb9b53.jpg");
+}
+
+/* line 23, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.hero-menu {
+  background-image: url("/assets/menu-848d24ee9985113a473bca03a31b04476045d158dc5b9ee5ef40b7068c94f961.jpg");
+}
+
+/* line 27, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.hero-hours {
+  background-image: url("/assets/hours-f82273d73775b66cca40de2a303f0f388f11029b98bb3eaf15cb4e6540bcbaa7.jpg");
+  background-position: center 80%;
+}
+
+/****************************************************
+                Main Grid Layout
+*****************************************************/
+/* line 36, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.container {
+  position: relative;
+  margin: 4em 0;
+}
+/* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+/* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.container:after {
+  clear: both;
+}
+/* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.container {
+  *zoom: 1;
+}
+
+/* line 41, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.main {
+  padding: 2em 2em;
+  box-shadow: 1px 0 2px -1px;
+  width: 100%;
+}
+@media screen and (min-width: 60em) {
+  /* line 41, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .main {
+    position: relative;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+  .main:before, .main:after {
+    content: " ";
+    display: table;
+  }
+  /* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+  .main:after {
+    clear: both;
+  }
+  /* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+  .main {
+    *zoom: 1;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 41, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .main {
+    max-width: 75em;
+  }
+}
+@media screen and (min-width: 90em) {
+  /* line 41, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .main {
+    max-width: 90em;
+  }
+}
+
+@media screen and (min-width: 60em) and (max-width: 75em) {
+  /* line 59, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .article {
+    width: 50%;
+    float: left;
+    padding-right: 3em;
+  }
+  /* line 62, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .article:last-child {
+    clear: both;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 59, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .article {
+    width: 33.33333%;
+    float: left;
+    padding-right: 3em;
+  }
+  /* line 70, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .article:last-child {
+    padding-right: 0;
+  }
+}
+
+/******************************************************
+        Menu Page Styles
+*******************************************************/
+/* line 79, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.l-menu-container {
+  position: relative;
+  margin-bottom: 3em;
+}
+/* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.l-menu-container:before, .l-menu-container:after {
+  content: " ";
+  display: table;
+}
+/* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.l-menu-container:after {
+  clear: both;
+}
+/* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.l-menu-container {
+  *zoom: 1;
+}
+/* line 83, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.l-menu-container:last-child {
+  border: 0;
+  margin-bottom: 0;
+}
+
+/* line 89, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.menu-item {
+  padding: 1em;
+  border: 1px solid lightgrey;
+  position: relative;
+  overflow: hidden;
+  max-height: calc($large-breakpoint * (3 / 4));
+  cursor: pointer;
+}
+/* line 97, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.menu-item > img {
+  max-width: 100%;
+  opacity: 0.65;
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+/* line 103, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.menu-item:hover > img {
+  opacity: 1;
+}
+/* line 107, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.menu-item:hover h2 {
+  -webkit-transform: translate3d(0, -0.9em, 0);
+          transform: translate3d(0, -0.9em, 0);
+}
+/* line 111, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.menu-item:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, -1em, 0);
+          transform: translate3d(0, -1em, 0);
+}
+@media screen and (min-width: 60em) {
+  /* line 89, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .menu-item {
+    float: left;
+    width: 48%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+}
+
+/* line 125, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 3em;
+  color: white;
+}
+
+/* line 135, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.caption-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 3em;
+}
+/* line 141, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.caption-description > p, .caption-description > h2 {
+  -webkit-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+/* line 145, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.caption-description > p {
+  opacity: 0;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+/******************************************************
+        About Page Styles
+*******************************************************/
+/* line 155, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.bio {
+  position: relative;
+  padding: 2em 1em;
+  border-bottom: 1px solid lightgrey;
+}
+/* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.bio:before, .bio:after {
+  content: " ";
+  display: table;
+}
+/* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.bio:after {
+  clear: both;
+}
+/* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.bio {
+  *zoom: 1;
+}
+/* line 160, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.bio .photo {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 200px;
+  width: 200px;
+}
+/* line 169, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.bio:last-child {
+  border: 0;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 60em) {
+  /* line 175, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .bio .photo {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    box-shadow: 1px 1px 3px inset gray;
+  }
+  /* line 179, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .bio:nth-child(2n) > .photo {
+    right: 1em;
+    float: right;
+  }
+  /* line 184, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .bio:nth-child(2n + 1) > .photo {
+    float: left;
+  }
+}
+
+/* line 191, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+.bio-article {
+  text-align: center;
+}
+@media screen and (min-width: 60em) {
+  /* line 191, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .bio-article {
+    width: 50%;
+    float: left;
+    padding-right: 2em;
+  }
+  /* line 197, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .bio:nth-child(2n) > .bio-article {
+    float: left;
+    text-align: left;
+  }
+  /* line 202, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_index.scss */
+  .bio:nth-child(2n + 1) > .bio-article {
+    float: right;
+    text-align: right;
+  }
+}
+
+/*********************************************************
+            Hours Page Styling
+*********************************************************/
+/* line 1, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.footer {
+  background: #333333;
+  letter-spacing: 2px;
+}
+
+/* line 7, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.l-footer-container {
+  padding: 1em;
+}
+@media screen and (min-width: 60em) {
+  /* line 7, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .l-footer-container {
+    position: relative;
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+  .l-footer-container:before, .l-footer-container:after {
+    content: " ";
+    display: table;
+  }
+  /* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+  .l-footer-container:after {
+    clear: both;
+  }
+  /* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+  .l-footer-container {
+    *zoom: 1;
+  }
+}
+@media screen and (min-width: 75em) {
+  /* line 7, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .l-footer-container {
+    max-width: 75em;
+  }
+}
+
+/* line 19, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.footer-nav, .social-nav {
+  display: block;
+  margin-bottom: 2em;
+  padding: 0;
+  list-style: none;
+}
+/* line 10, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.footer-nav:before, .social-nav:before, .footer-nav:after, .social-nav:after {
+  content: " ";
+  display: table;
+}
+/* line 16, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.footer-nav:after, .social-nav:after {
+  clear: both;
+}
+/* line 20, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_base.scss */
+.footer-nav, .social-nav {
+  *zoom: 1;
+}
+/* line 26, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.footer-nav > li, .social-nav > li {
+  float: left;
+  width: 25%;
+}
+/* line 31, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.footer-nav .nav-link, .social-nav .nav-link {
+  color: #e6e6e6;
+  -webkit-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+}
+/* line 35, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.footer-nav .nav-link:hover, .social-nav .nav-link:hover {
+  color: #999999;
+}
+@media screen and (min-width: 60em) {
+  /* line 19, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .footer-nav, .social-nav {
+    float: left;
+  }
+  /* line 43, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .footer-nav > li, .social-nav > li {
+    display: block;
+    margin: 1em 0;
+    float: none;
+  }
+  /* line 48, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .footer-nav > li:first-child, .social-nav > li:first-child {
+    margin: 0;
+  }
+  /* line 52, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .footer-nav > li:last-child, .social-nav > li:last-child {
+    margin: 0;
+  }
+}
+
+/* line 59, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.contact {
+  color: #e6e6e6;
+}
+/* line 62, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.contact .address {
+  color: #a6a6a6;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 60em) {
+  /* line 59, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .contact {
+    max-width: 60em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 79, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.social a {
+  color: white;
+}
+/* line 83, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.social > li {
+  width: 33%;
+}
+@media screen and (min-width: 60em) {
+  /* line 77, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .social {
+    float: right;
+  }
+}
+
+/* line 95, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+.social-nav > li {
+  float: left;
+  width: 33%;
+}
+@media screen and (min-width: 60em) {
+  /* line 92, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .social-nav {
+    float: left;
+  }
+  /* line 103, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .social-nav > li {
+    display: block;
+    margin: 1em 0;
+    float: none;
+  }
+  /* line 108, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .social-nav > li:first-child {
+    margin: 0;
+  }
+  /* line 112, /home/seoyoon/Documents/sites/chicknbap/app/assets/stylesheets/_footer.scss */
+  .social-nav > li:last-child {
+    margin: 0;
+  }
+}
