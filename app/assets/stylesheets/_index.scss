@@ -263,3 +263,57 @@
 /*******************************************************
           Contact Page Styles
 ********************************************************/
+.contact-form {
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding: 1em 1em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.tag-container {
+  position: relative;
+}
+
+.form-input {
+  padding: 1em;
+  border-radius: 1px;
+}
+
+.form-input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1px;
+  font-size: 0.75em;
+  text-transform: uppercase;
+}
+
+.form-input-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 3em;
+  margin-bottom: 3em;
+
+  textarea {
+    width: 100%;
+    resize: none;
+  }
+}
+
+.btn {
+  padding: 1em;
+  background: lighten(blue, 10%); 
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.35s ease-in-out;
+
+  &:hover {
+    background: darken(#FF7E07, 10%);
+  }
+}

@@ -1,5 +1,25 @@
 <section class="hero hero-contact"></section>
 <div class="container">
   <section class="main">
+    <%= form_tag('#', class: 'contact-form') do %>
+      <h2>Questions, Comments or Concerns?</h2>
+      <div class="tag-container">
+        <div class="form-input-container">
+          <%= label_tag(:name, "Name: ", class: 'form-input-label') %>
+          <%= text_field_tag(:name, nil, class: 'form-input') %>
+        </div>
+        <div class="form-input-container">
+          <%= label_tag(:email, "Email: ", class: 'form-input-label') %>
+          <%= text_field_tag(:email, nil, class: 'form-input') %>
+        </div>
+      </div>
+      <div class="tag-container">
+        <div class="form-input-container">
+          <%= label_tag(:comments, "Comments: ", class: 'form-input-label') %>
+          <%= text_area_tag(:comments, nil, size: '60x12', class: 'form-input') %>
+        </div>
+      </div>
+      <%= submit_tag("Send Email", disabled: true, class: 'btn') %>
+    <% end %>
   </section>
 </div>
